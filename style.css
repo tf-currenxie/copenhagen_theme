@@ -518,10 +518,14 @@ ul {
 .table th a {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   text-align: left;
 }
 
@@ -884,10 +888,13 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+=======
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
 
 .user-info > button:hover, .user-info > button:focus {
@@ -2031,10 +2038,14 @@ ul {
 .comment-sorter .dropdown-toggle {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
 
 [dir="rtl"] .comment-sorter {
@@ -2380,10 +2391,14 @@ ul {
 .topic-header {
   border-bottom: 1px solid #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
 
 @media (min-width: 768px) {
@@ -2534,10 +2549,14 @@ ul {
 .striped-list-count {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   justify-content: flex-start;
   text-transform: capitalize;
 }
@@ -3438,10 +3457,14 @@ ul {
 .contributions-table td:last-child {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
 
 @media (min-width: 768px) {
@@ -3594,7 +3617,11 @@ ul {
 
 .request-sidebar h2 {
   font-size: 16px;
+<<<<<<< HEAD
   font-weight: 500;
+=======
+  font-weight: 600;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   position: relative;
 }
 
@@ -3737,10 +3764,14 @@ ul {
 .meta-data {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
 
 .meta-data:not(:last-child)::after {
@@ -4032,10 +4063,14 @@ ul {
   padding: 10px 0;
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4133,10 +4168,14 @@ ul {
 .profile-badges-item-description, .profile-badges-item-metadata-description {
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 14px;
 =======
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
+=======
+  font-size: 14px;
+>>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   margin: 0;
 }
 
