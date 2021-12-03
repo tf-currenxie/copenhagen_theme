@@ -517,7 +517,11 @@ ul {
 .table th,
 .table th a {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
   text-align: left;
 }
 
@@ -2026,7 +2030,11 @@ ul {
 
 .comment-sorter .dropdown-toggle {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
 }
 
 [dir="rtl"] .comment-sorter {
@@ -2371,7 +2379,11 @@ ul {
 /* Community topic page */
 .topic-header {
   border-bottom: 1px solid #fff;
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
 }
 
 @media (min-width: 768px) {
@@ -2521,7 +2533,11 @@ ul {
 
 .striped-list-count {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
   justify-content: flex-start;
   text-transform: capitalize;
 }
@@ -3421,7 +3437,11 @@ ul {
 /* Contributions table */
 .contributions-table td:last-child {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
 }
 
 @media (min-width: 768px) {
@@ -3716,7 +3736,11 @@ ul {
 
 .meta-data {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
 }
 
 .meta-data:not(:last-child)::after {
@@ -4007,7 +4031,11 @@ ul {
   flex-basis: 100%;
   padding: 10px 0;
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4104,7 +4132,11 @@ ul {
 
 .profile-badges-item-description, .profile-badges-item-metadata-description {
   color: lighten($text_color, 50%);
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 13px;
+>>>>>>> 6dffe90 ([sc-2768] update home page styles)
   margin: 0;
 }
 
