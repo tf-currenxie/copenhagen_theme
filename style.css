@@ -889,12 +889,18 @@ ul {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ebde593 (fix: [sc-2768] update home page)
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+<<<<<<< HEAD
 =======
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
+=======
+>>>>>>> ebde593 (fix: [sc-2768] update home page)
 }
 
 .user-info > button:hover, .user-info > button:focus {
@@ -3618,10 +3624,14 @@ ul {
 .request-sidebar h2 {
   font-size: 16px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-weight: 500;
 =======
   font-weight: 600;
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
+=======
+  font-weight: 500;
+>>>>>>> ebde593 (fix: [sc-2768] update home page)
   position: relative;
 }
 
