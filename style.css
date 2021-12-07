@@ -436,6 +436,9 @@ ul {
 }
 
 .button-large, input[type="submit"] {
+  font-family: $heading_font;
+  font-weight: 700;
+  border: 1px solid $link_color;
   padding: 9px 20px;
   cursor: pointer;
   background-color: $link_color;
@@ -445,6 +448,9 @@ ul {
   font-size: 14px;
   width: 100%;
   min-height: 41px;
+  -webkit-touch-callout: none;
+  outline: none;
+  box-shadow: none !important;
 }
 
 @media (min-width: 768px) {
@@ -596,7 +602,9 @@ ul {
 
 /***** Forms *****/
 .form {
-  max-width: 650px;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-field ~ .form-field {
@@ -605,28 +613,30 @@ ul {
 
 .form-field label {
   display: block;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
+  font-weight: 500;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .form-field input {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 9px;
   width: 100%;
 }
 
 .form-field input:focus {
-  border: 1px solid $brand_color;
+  border-color: $link_color;
 }
 
 .form-field input[type="text"] {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
 }
 
 .form-field input[type="text"]:focus {
-  border: 1px solid $brand_color;
+  border-color: $link_color;
 }
 
 .form-field input[type="checkbox"] {
@@ -672,8 +682,9 @@ ul {
 }
 
 .form footer {
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 30px;
+  text-align: center;
 }
 
 .form footer a {
@@ -699,6 +710,15 @@ ul {
 
 .form .suggestion-list li a:visited {
   color: $visited_link_color;
+}
+
+.form .request_description div[role=application] {
+  border-color: $brand_text_color !important;
+}
+
+.form .request_description div[role=toolbar] {
+  border-color: $brand_text_color !important;
+  border-bottom-color: darken($background_color, 4%) !important;
 }
 
 /***** Header *****/
@@ -2053,6 +2073,12 @@ ul {
 [dir="rtl"] .attachments .attachment-item .attachment-icon {
   left: auto;
   right: 0;
+}
+
+.upload-dropzone {
+  border-color: $brand_text_color;
+  background-color: $brand_text_color;
+  border-radius: 5px;
 }
 
 .upload-dropzone span {
@@ -3602,6 +3628,10 @@ ul {
 }
 
 /***** Request *****/
+.request-section h1 {
+  text-align: center;
+}
+
 .request-container {
   display: flex;
   flex-direction: column;
@@ -3800,6 +3830,12 @@ ul {
 
 .request-attachments dd {
   margin: 10px 0 0 0;
+}
+
+.request-form {
+  padding: 60px;
+  border-radius: 5px;
+  background-color: darken($background_color, 4%);
 }
 
 .request-form textarea {

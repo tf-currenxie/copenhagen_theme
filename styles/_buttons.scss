@@ -56,6 +56,9 @@
     width: auto;
   }
 
+  font-family: $heading_font;
+  font-weight: $font-weight-bold;
+  border: 1px solid $button-color;
   padding: 9px 20px;
   cursor: pointer;
   background-color: $button-color;
@@ -65,6 +68,9 @@
   font-size: $font-size-small;
   width: 100%;
   min-height: 41px;
+  -webkit-touch-callout: none;
+  outline: none;
+  box-shadow: none !important;
 
   &:hover,
   &:focus,
