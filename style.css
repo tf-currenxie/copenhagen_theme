@@ -1013,6 +1013,9 @@ ul {
 .footer {
   margin-top: 60px;
   padding: 30px 0;
+  background-color: $brand_color;
+  color: $brand_text_color;
+  font-size: 14px;
 }
 
 .footer a {
@@ -1023,8 +1026,6 @@ ul {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
-  display: flex;
-  justify-content: space-between;
 }
 
 @media (min-width: 1160px) {
@@ -1039,10 +1040,30 @@ ul {
   display: inline-block;
 }
 
+.footer-social {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.footer-social a {
+  display: block;
+  padding: 10px;
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-social svg path {
+  fill: #ffffff;
+}
+
 /***** Breadcrumbs *****/
 .breadcrumbs-container {
   padding: 12px 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   background-color: darken($background_color, 4%);
 }
 
