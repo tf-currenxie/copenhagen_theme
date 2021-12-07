@@ -1,4 +1,10 @@
 /***** Breadcrumbs *****/
+.breadcrumbs-container {
+  padding: 12px 0;
+  margin-bottom: 30px;
+  background-color: $secondary-shade;
+}
+
 .breadcrumbs {
   @include tablet {
     margin: 0;

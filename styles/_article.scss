@@ -34,7 +34,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-top: 20px;
   }
 
@@ -43,6 +43,9 @@
   }
 
   &-author {
+    @include tablet {
+      margin-bottom: 0;
+    }
     line-height: $line-height-small;
     margin-bottom: 10px;
   }
@@ -80,8 +83,7 @@
   }
 
   &-content {
-    line-height: 1.6;
-    margin: 40px 0;
+    margin: 30px 0;
     word-wrap: break-word;
   }
 
@@ -110,7 +112,7 @@
   &-sidebar {
     @include desktop {
       border: 0;
-      flex: 0 0 17%;
+      flex: 0 0 20%;
       height: auto;
     }
 
@@ -155,6 +157,11 @@
     border-top: 1px solid $border-color;
     padding: 30px 0;
     text-align: center;
+  }
+
+  &-votes-question {
+    font-family: $text_font_medium;
+    font-weight: $font-weight-semibold;
   }
 
   &-vote {
@@ -211,7 +218,7 @@
     border-radius: $border-radius;
     color: $text_color;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     padding: 10px;
 
     &.current-article,

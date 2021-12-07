@@ -4,10 +4,10 @@
 
   font-family: $heading_font;
   font-weight: $font-weight-bold;
-  background-color: transparent;
   border: 1px solid $button-color;
+  background-color: $button-color;
+  color: $brand_text_color;
   border-radius: 4px;
-  color: $button-color;
   cursor: pointer;
   display: inline-block;
   font-size: $font-size-smaller;
@@ -27,8 +27,9 @@
   &:hover,
   &:active,
   &:focus {
-    color: $hover-button-color;
+    background-color: $hover-button-color;
     border-color: $hover-button-color;
+    color: $brand_text_color;
     text-decoration: none;
   }
 

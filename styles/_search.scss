@@ -29,6 +29,12 @@
   }
 }
 
+.search.has-border {
+  input[type="search"] {
+    border-color: $border-color;
+  }
+}
+
 .search-icon {
   @include vertical-align;
   position: absolute;
