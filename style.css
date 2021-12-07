@@ -2538,7 +2538,7 @@ ul {
 }
 
 .community-follow button:hover {
-  background-color: $brand_color;
+  background-color: #59d28a;
 }
 
 .community-follow button:hover::after, .community-follow button:focus::after {
@@ -2547,7 +2547,7 @@ ul {
 }
 
 .community-follow button[data-selected="true"] {
-  background-color: $brand_color;
+  background-color: #59d28a;
   color: $brand_text_color;
 }
 
@@ -2562,9 +2562,9 @@ ul {
 }
 
 .community-follow button::after {
-  border-left: 1px solid $link_color;
+  border-left: 1px solid $brand_text_color;
   content: attr(data-follower-count);
-  color: $link_color;
+  color: $brand_text_color;
   display: inline-block;
   font-family: $heading_font;
   margin-left: 15px;
@@ -2581,7 +2581,7 @@ ul {
 
 [dir="rtl"] .community-follow button::after {
   border-left: 0;
-  border-right: 1px solid $link_color;
+  border-right: 1px solid $brand_text_color;
   margin: 0 10px 0 0;
   padding: 0 10px 0 0;
 }
@@ -3795,6 +3795,17 @@ ul {
   text-align: center;
 }
 
+.pagination li {
+  vertical-align: top;
+}
+
+.pagination a {
+  display: block;
+  line-height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .pagination-next, .pagination-prev, .pagination-first, .pagination-last {
   display: inline-block;
 }
@@ -3917,6 +3928,7 @@ ul {
   line-height: 0;
   align-self: center;
   margin-right: 10px;
+  display: none;
 }
 
 [dir="rtl"] .profile-avatar {
