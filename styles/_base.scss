@@ -1,8 +1,8 @@
 /***** Base *****/
 @font-face {
   font-family: 'Styrene B Regular';
-  src: url('$assets-StyreneB-Regular-Web-woff2') format('woff2'),
-  url('$assets-StyreneB-Regular-Web-woff') format('woff');
+  src: url($assets-styrene-b-regular-woff2) format('woff2'),
+  url($assets-styrene-b-regular-woff) format('woff');
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Styrene B Medium';
-  src: url('$assets-StyreneB-Medium-Web-woff2') format('woff2'),
-  url('$assets-StyreneB-Medium-Web-woff') format('woff');
+  src: url($assets-styrene-b-medium-woff2) format('woff2'),
+  url($assets-styrene-b-medium-woff) format('woff');
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: 'Styrene B Bold';
-  src: url('$assets-StyreneB-Bold-Web-woff2') format('woff2'),
-  url('$assets-StyreneB-Bold-Web-woff') format('woff');
+  src: url($assets-styrene-b-bold-woff2) format('woff2'),
+  url($assets-styrene-b-bold-woff) format('woff');
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -45,6 +45,7 @@ body {
   font-size: $font-size-base;
   line-height: 1.5;
   letter-spacing: -0.15px;
+  text-size-adjust: 100%;
 
   > main {
     @include desktop {
@@ -81,7 +82,9 @@ a {
 
 input,
 textarea {
-  color: #000;
+  font-family: $text_font;
+  font-weight: 400;
+  color: $field-text-color;
   font-size: $input-font-size;
 }
 

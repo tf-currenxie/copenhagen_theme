@@ -30,7 +30,7 @@ $border-color: #fff;
 
 $button-color: $brand_color;
 
-$input-font-size: 16px;
+$input-font-size: $font-size-small;
 $field-text-color: #222;
 $field-text-focus-color: #222;
 
@@ -40,7 +40,7 @@ $desktop-width: 1024px;
 $max-width-container: 1160px;
 
 // Fonts
-$heading_font: "Styrene B Bold", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
-$text_font: "Styrene B Regular", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
-$text_font_medium: "Styrene B Medium", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
+$heading_font: "Styrene B Bold", Verdana, sans-serif !default;
+$text_font: "Styrene B Regular", Verdana, sans-serif !default;
+$text_font_medium: "Styrene B Medium", Verdana, sans-serif !default;
 $font-weight-semibold: 500;

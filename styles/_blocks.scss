@@ -48,6 +48,7 @@
 
     &:nth-of-type(3) &-icon {
       background-image: url($assets-cx-png);
+      transform: scale(0.85);
     }
 
     &-internal {

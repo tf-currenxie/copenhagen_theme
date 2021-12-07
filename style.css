@@ -184,7 +184,7 @@ template {
 /***** Base *****/
 @font-face {
   font-family: 'Styrene B Regular';
-  src: url("$assets-StyreneB-Regular-Web-woff2") format("woff2"), url("$assets-StyreneB-Regular-Web-woff") format("woff");
+  src: url($assets-styrene-b-regular-woff2) format("woff2"), url($assets-styrene-b-regular-woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -193,7 +193,7 @@ template {
 
 @font-face {
   font-family: 'Styrene B Medium';
-  src: url("$assets-StyreneB-Medium-Web-woff2") format("woff2"), url("$assets-StyreneB-Medium-Web-woff") format("woff");
+  src: url($assets-styrene-b-medium-woff2) format("woff2"), url($assets-styrene-b-medium-woff) format("woff");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
@@ -202,7 +202,7 @@ template {
 
 @font-face {
   font-family: 'Styrene B Bold';
-  src: url("$assets-StyreneB-Bold-Web-woff2") format("woff2"), url("$assets-StyreneB-Bold-Web-woff") format("woff");
+  src: url($assets-styrene-b-bold-woff2) format("woff2"), url($assets-styrene-b-bold-woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -225,6 +225,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.15px;
+  text-size-adjust: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -267,8 +268,10 @@ a:hover, a:active, a:focus {
 
 input,
 textarea {
-  color: #000;
-  font-size: 16px;
+  font-family: $text_font;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
 }
 
 input {
@@ -745,7 +748,7 @@ ul {
 }
 
 .nav-wrapper a {
-  font-family: "Styrene B Medium", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
   font-weight: 500;
   border: 0;
   color: $brand_text_color;
@@ -875,7 +878,7 @@ ul {
 }
 
 .user-info > button {
-  font-family: "Styrene B Medium", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
   font-weight: 500;
   border: 0;
   color: $brand_text_color;
@@ -1260,6 +1263,7 @@ ul {
 
 .blocks-item:nth-of-type(3) .blocks-item-icon {
   background-image: url($assets-cx-png);
+  transform: scale(0.85);
 }
 
 .blocks-item-internal {
@@ -1308,7 +1312,7 @@ ul {
 }
 
 .blocks-item-title {
-  font-family: "Styrene B Medium", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -1442,7 +1446,7 @@ ul {
 }
 
 .recent-activity-item-parent {
-  font-family: "Styrene B Medium", BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
