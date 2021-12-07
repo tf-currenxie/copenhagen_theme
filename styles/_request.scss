@@ -176,9 +176,17 @@
   }
 
   &-form {
-    padding: 60px;
+    padding: 30px;
     border-radius: $border-radius;
     background-color: $primary-shade;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    @include desktop {
+      padding: 60px;
+    }
   }
 
   &-form textarea {

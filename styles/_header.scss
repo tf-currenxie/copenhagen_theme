@@ -14,8 +14,9 @@ $header-height: 65px;
   justify-content: space-between;
 }
 
-.logo img {
+.logo img, .logo svg {
   max-height: 18px;
+  width: 114px;
   vertical-align: middle;
 }
 
