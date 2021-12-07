@@ -21,19 +21,21 @@
 
   &:hover,
   &:active,
-  &:focus,
-  &.button-primary {
-    background-color: $brand_color;
-    color: $brand_text_color;
+  &:focus {
+    color: $hover-button-color;
+    border-color: $hover-button-color;
     text-decoration: none;
   }
 
   &.button-primary {
+    background-color: $button-color;
+    color: $brand_text_color;
     &:hover,
     &:focus,
     &:active {
       background-color: $hover-button-color;
       border-color: $hover-button-color;
+      color: $brand_text_color;
     }
   }
 

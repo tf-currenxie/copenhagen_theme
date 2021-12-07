@@ -76,7 +76,7 @@ $header-height: 65px;
     &:focus,
     &:active {
       background-color: transparent;
-      color: $link_color_hover;
+      color: $hover-link-color;
       text-decoration: none;
     }
 

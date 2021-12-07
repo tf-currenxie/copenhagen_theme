@@ -28,7 +28,7 @@
 
     &:hover,
     &:focus {
-      color: $link_color_hover;
+      color: $hover-link-color;
       background-color: transparent;
     }
 
@@ -100,5 +100,6 @@
     right: -2px;
     text-align: center;
     width: 17px;
+    display: none;
   }
 }

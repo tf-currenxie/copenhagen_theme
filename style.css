@@ -2,7 +2,7 @@
 /***** Normalize.css *****/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
-  line-height: 1.15;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -83,7 +83,7 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  line-height: 1.15;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -236,6 +236,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading_font;
+  line-height: 1.2;
   margin-top: 0;
 }
 
@@ -314,8 +315,8 @@ select::-ms-expand {
 }
 
 textarea {
-  border: 1px solid #fff;
-  border-radius: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   resize: vertical;
   width: 100%;
   outline: none;
@@ -323,7 +324,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid $brand_color;
+  border: 1px solid $link_color;
 }
 
 .container {
@@ -380,9 +381,9 @@ ul {
 /***** Buttons *****/
 .button, .split-button button, .section-subscribe button, .article-subscribe button, .community-follow button, .requests-table-toolbar .organization-subscribe button, .subscriptions-subscribe button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link {
   background-color: transparent;
-  border: 1px solid $brand_color;
+  border: 1px solid $link_color;
   border-radius: 4px;
-  color: $brand_color;
+  color: $link_color;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -403,15 +404,21 @@ ul {
   }
 }
 
-.button:hover, .split-button button:hover, .section-subscribe button:hover, .article-subscribe button:hover, .community-follow button:hover, .requests-table-toolbar .organization-subscribe button:hover, .subscriptions-subscribe button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .button:active, .split-button button:active, .section-subscribe button:active, .article-subscribe button:active, .community-follow button:active, .requests-table-toolbar .organization-subscribe button:active, .subscriptions-subscribe button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .button:focus, .split-button button:focus, .section-subscribe button:focus, .article-subscribe button:focus, .community-follow button:focus, .requests-table-toolbar .organization-subscribe button:focus, .subscriptions-subscribe button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus, .button.button-primary, .split-button button.button-primary, .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .community-follow button.button-primary, .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link {
-  background-color: $brand_color;
-  color: $brand_text_color;
+.button:hover, .split-button button:hover, .section-subscribe button:hover, .article-subscribe button:hover, .community-follow button:hover, .requests-table-toolbar .organization-subscribe button:hover, .subscriptions-subscribe button:hover, .pagination-next-link:hover, .pagination-prev-link:hover, .pagination-first-link:hover, .pagination-last-link:hover, .button:active, .split-button button:active, .section-subscribe button:active, .article-subscribe button:active, .community-follow button:active, .requests-table-toolbar .organization-subscribe button:active, .subscriptions-subscribe button:active, .pagination-next-link:active, .pagination-prev-link:active, .pagination-first-link:active, .pagination-last-link:active, .button:focus, .split-button button:focus, .section-subscribe button:focus, .article-subscribe button:focus, .community-follow button:focus, .requests-table-toolbar .organization-subscribe button:focus, .subscriptions-subscribe button:focus, .pagination-next-link:focus, .pagination-prev-link:focus, .pagination-first-link:focus, .pagination-last-link:focus {
+  color: #59d28a;
+  border-color: #59d28a;
   text-decoration: none;
 }
 
+.button.button-primary, .split-button button.button-primary, .section-subscribe button.button-primary, .section-subscribe button[data-selected="true"], .article-subscribe button.button-primary, .article-subscribe button[data-selected="true"], .community-follow button.button-primary, .requests-table-toolbar .organization-subscribe button.button-primary, .requests-table-toolbar .organization-subscribe button[data-selected="true"], .subscriptions-subscribe button.button-primary, .subscriptions-subscribe button[data-selected="true"], .button-primary.pagination-next-link, .button-primary.pagination-prev-link, .button-primary.pagination-first-link, .button-primary.pagination-last-link {
+  background-color: $link_color;
+  color: $brand_text_color;
+}
+
 .button.button-primary:hover, .split-button button:hover, .section-subscribe button.button-primary:hover, .section-subscribe button:hover[data-selected="true"], .article-subscribe button.button-primary:hover, .article-subscribe button:hover[data-selected="true"], .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button:hover[data-selected="true"], .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button:hover[data-selected="true"], .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .button.button-primary:focus, .split-button button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button:focus[data-selected="true"], .article-subscribe button.button-primary:focus, .article-subscribe button:focus[data-selected="true"], .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button:focus[data-selected="true"], .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button:focus[data-selected="true"], .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .button.button-primary:active, .split-button button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button:active[data-selected="true"], .article-subscribe button.button-primary:active, .article-subscribe button:active[data-selected="true"], .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button:active[data-selected="true"], .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button:active[data-selected="true"], .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active {
-  background-color: darken($brand_color, 50%);
-  border-color: darken($brand_color, 50%);
+  background-color: #59d28a;
+  border-color: #59d28a;
+  color: $brand_text_color;
 }
 
 .button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], .pagination-next-link[data-disabled], .pagination-prev-link[data-disabled], .pagination-first-link[data-disabled], .pagination-last-link[data-disabled] {
@@ -420,7 +427,7 @@ ul {
 
 .button-large, input[type="submit"] {
   cursor: pointer;
-  background-color: $brand_color;
+  background-color: $link_color;
   border: 0;
   border-radius: 4px;
   color: $brand_text_color;
@@ -438,7 +445,7 @@ ul {
 }
 
 .button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-  background-color: darken($brand_color, 50%);
+  background-color: #59d28a;
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
@@ -446,7 +453,7 @@ ul {
 }
 
 .button-secondary {
-  color: lighten($text_color, 50%);
+  color: #888;
   border: 1px solid #fff;
   background-color: transparent;
 }
@@ -519,9 +526,13 @@ ul {
 
 .table th,
 .table th a {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 =======
   font-size: 13px;
@@ -639,12 +650,12 @@ ul {
 }
 
 .form-field .optional {
-  color: lighten($text_color, 50%);
+  color: #888;
   margin-left: 4px;
 }
 
 .form-field p {
-  color: lighten($text_color, 50%);
+  color: #888;
   font-size: 12px;
   margin: 5px 0;
 }
@@ -655,7 +666,7 @@ ul {
 }
 
 .form footer a {
-  color: lighten($text_color, 50%);
+  color: #888;
   cursor: pointer;
   margin-right: 15px;
 }
@@ -984,6 +995,7 @@ ul {
   right: -2px;
   text-align: center;
   width: 17px;
+  display: none;
 }
 
 /***** Footer *****/
@@ -993,7 +1005,7 @@ ul {
 }
 
 .footer a {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 .footer-inner {
@@ -1012,7 +1024,7 @@ ul {
 }
 
 .footer-language-selector button {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: inline-block;
 }
 
@@ -1029,7 +1041,7 @@ ul {
 }
 
 .breadcrumbs li {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: inline;
   font-size: 14px;
   max-width: 450px;
@@ -1399,7 +1411,6 @@ ul {
 /***** Community section in homepage *****/
 .community {
   text-align: center;
-  display: none;
 }
 
 .community-image {
@@ -1485,7 +1496,7 @@ ul {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: inline-block;
   font-size: 14px;
 }
@@ -1702,10 +1713,11 @@ ul {
 }
 
 .article-avatar {
-  margin-right: 10px;
+  display: none;
 }
 
 .article-author {
+  line-height: 1.2;
   margin-bottom: 10px;
 }
 
@@ -1792,7 +1804,7 @@ ul {
 
 .article-body blockquote {
   border-left: 1px solid #fff;
-  color: lighten($text_color, 50%);
+  color: #888;
   font-style: italic;
   padding: 0 15px;
 }
@@ -1815,7 +1827,7 @@ ul {
 }
 
 .article-comment-count {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 .article-comment-count:hover {
@@ -1918,21 +1930,22 @@ ul {
 
 .sidenav-title {
   font-size: 16px;
+  font-family: "Styrene B Medium", Verdana, sans-serif;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sidenav-item {
-  border-radius: 4px;
+  border-radius: 5px;
   color: $text_color;
   display: block;
   margin-bottom: 10px;
   padding: 10px;
 }
 
-.sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+.sidenav-item.current-article, .sidenav-item:hover, .sidenav-item:active {
+  background-color: darken($background_color, 3%);
+  color: $text_color;
   text-decoration: none;
 }
 
@@ -1971,7 +1984,7 @@ ul {
 }
 
 .upload-dropzone span {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 /***** Social share links *****/
@@ -1990,7 +2003,7 @@ ul {
 }
 
 .share a {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 .share a:hover {
@@ -2030,7 +2043,7 @@ ul {
 }
 
 .comment-callout {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: inline-block;
   font-size: 14px;
   margin-bottom: 0;
@@ -2046,6 +2059,7 @@ ul {
 }
 
 .comment-sorter .dropdown-toggle {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2054,6 +2068,9 @@ ul {
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
 =======
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
@@ -2103,6 +2120,7 @@ ul {
 }
 
 .comment-avatar {
+  display: none;
   margin-right: 10px;
 }
 
@@ -2255,7 +2273,7 @@ ul {
 
 .comment-body blockquote {
   border-left: 1px solid #fff;
-  color: lighten($text_color, 50%);
+  color: #888;
   font-style: italic;
   padding: 0 15px;
 }
@@ -2277,7 +2295,7 @@ ul {
 }
 
 .vote-sum {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: block;
   margin: 3px 0;
 }
@@ -2302,7 +2320,7 @@ ul {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten($text_color, 50%);
+  color: #888;
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
@@ -2316,7 +2334,7 @@ ul {
 }
 
 .vote-voted:hover {
-  color: darken($brand_color, 50%);
+  color: #59d28a;
 }
 
 /***** Actions *****/
@@ -2483,14 +2501,14 @@ ul {
 }
 
 .community-follow button[data-selected="true"]:hover {
-  background-color: darken($brand_color, 50%);
-  border-color: darken($brand_color, 50%);
+  background-color: #59d28a;
+  border-color: #59d28a;
 }
 
 .community-follow button::after {
-  border-left: 1px solid $brand_color;
+  border-left: 1px solid $link_color;
   content: attr(data-follower-count);
-  color: $brand_color;
+  color: $link_color;
   display: inline-block;
   font-family: $heading_font;
   margin-left: 15px;
@@ -2507,7 +2525,7 @@ ul {
 
 [dir="rtl"] .community-follow button::after {
   border-left: 0;
-  border-right: 1px solid $brand_color;
+  border-right: 1px solid $link_color;
   margin: 0 10px 0 0;
   padding: 0 10px 0 0;
 }
@@ -2557,9 +2575,13 @@ ul {
 }
 
 .striped-list-count {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 =======
   font-size: 13px;
@@ -2654,7 +2676,7 @@ ul {
 
 .status-label-not-planned, .status-label-closed {
   background-color: #e9ebed;
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 .status-label-pending, .status-label-pending-moderation {
@@ -2843,7 +2865,7 @@ ul {
 
 .post-body blockquote {
   border-left: 1px solid #fff;
-  color: lighten($text_color, 50%);
+  color: #888;
   font-style: italic;
   padding: 0 15px;
 }
@@ -2856,7 +2878,7 @@ ul {
 }
 
 .post-comment-count {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 .post-comment-count:hover {
@@ -3162,6 +3184,12 @@ ul {
   margin-top: 0;
 }
 
+@media (min-width: 1024px) {
+  .collapsible-sidebar-title {
+    display: none;
+  }
+}
+
 .collapsible-sidebar-toggle {
   position: absolute;
   top: calc(45px / 2);
@@ -3465,6 +3493,7 @@ ul {
 
 /* Contributions table */
 .contributions-table td:last-child {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3473,6 +3502,9 @@ ul {
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
 =======
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
@@ -3486,7 +3518,7 @@ ul {
 }
 
 .no-activities {
-  color: lighten($text_color, 50%);
+  color: #888;
 }
 
 /***** Request *****/
@@ -3554,7 +3586,7 @@ ul {
 .request-main .comment-show-container {
   border-radius: 2px;
   border: 1px solid #fff;
-  color: lighten($text_color, 50%);
+  color: #888;
   text-align: inherit;
   padding: 8px 25px;
   width: 100%;
@@ -3674,7 +3706,7 @@ ul {
 }
 
 .request-details dt {
-  color: lighten($text_color, 50%);
+  color: #888;
   width: 40%;
 }
 
@@ -3776,6 +3808,7 @@ ul {
 }
 
 .meta-data {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3784,6 +3817,9 @@ ul {
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
 =======
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
 }
@@ -3915,7 +3951,7 @@ ul {
 }
 
 .profile-stats .stat-label {
-  color: lighten($text_color, 50%);
+  color: #888;
   flex: 0 0 100px;
   margin-right: 10px;
 }
@@ -4075,9 +4111,13 @@ ul {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 =======
   font-size: 13px;
@@ -4180,6 +4220,7 @@ ul {
 }
 
 .profile-badges-item-description, .profile-badges-item-metadata-description {
+<<<<<<< HEAD
   color: lighten($text_color, 50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4188,6 +4229,9 @@ ul {
   font-size: 13px;
 >>>>>>> 6dffe90 ([sc-2768] update home page styles)
 =======
+=======
+  color: #888;
+>>>>>>> 8a36b63 (fix: [sc-2768] update article styles)
   font-size: 14px;
 >>>>>>> 8d8401d (fix: [sc-2768] update home page styles)
   margin: 0;
@@ -4625,7 +4669,7 @@ ul {
 }
 
 .search-result-votes, .search-result-meta-count {
-  color: lighten($text_color, 50%);
+  color: #888;
   display: inline-block;
   font-size: 14px;
   padding: 4px 5px;

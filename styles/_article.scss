@@ -39,10 +39,11 @@
   }
 
   &-avatar {
-    margin-right: 10px;
+    display: none;
   }
 
   &-author {
+    line-height: $line-height-small;
     margin-bottom: 10px;
   }
 
@@ -192,21 +193,23 @@
 .sidenav {
   &-title {
     font-size: $font-size-base;
+    font-family: $text_font_medium;
     position: relative;
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
   }
 
   &-item {
-    border-radius: 4px;
+    border-radius: $border-radius;
     color: $text_color;
     display: block;
     margin-bottom: 10px;
     padding: 10px;
 
     &.current-article,
-    &:hover {
-      background-color: $brand_color;
-      color: $brand_text_color;
+    &:hover,
+    &:active {
+      background-color: $primary-shade;
+      color: $text_color;
       text-decoration: none;
     }
   }
