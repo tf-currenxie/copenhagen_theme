@@ -19,8 +19,16 @@
       content: ">";
       margin: 0 4px;
     }
-    a:visited {
-      color: $link_color;
+    a {
+      color: $text_color;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $hover-link-color !important;
+      }
+      &:visited {
+        color: $text_color;
+      }
     }
   }
 }
