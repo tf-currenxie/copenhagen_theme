@@ -31,7 +31,7 @@ $font-size-small: 14px;
 $font-size-smaller: 12px;
 
 $border-radius: 5px;
-$border-color: #fff;
+$border-color: $color-gray-main;
 
 $input-font-size: $font-size-small;
 $field-text-color: #222;
@@ -46,4 +46,5 @@ $max-width-container: 1160px;
 $heading_font: "Styrene B Bold", Verdana, sans-serif !default;
 $text_font: "Styrene B Regular", Verdana, sans-serif !default;
 $text_font_medium: "Styrene B Medium", Verdana, sans-serif !default;
+$font-weight-bold: 700;
 $font-weight-semibold: 500;

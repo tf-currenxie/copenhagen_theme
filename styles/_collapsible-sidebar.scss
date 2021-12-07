@@ -40,24 +40,28 @@
     &[aria-expanded="false"] {
       .chevron-icon {
         display: inline-block;
+        vertical-align: middle;
       }
     }
 
     &[aria-expanded="true"] {
       .x-icon {
         display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 2px
       }
     }
 
     &:focus {
       outline: none;
-      border: 1px solid $brand_color;
     }
   }
 
   &-body {
     @include desktop { display: block; }
     display: none;
+    padding-top: 10px;
   }
 
   &[aria-expanded="true"] {

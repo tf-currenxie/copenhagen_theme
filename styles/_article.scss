@@ -136,10 +136,17 @@
       min-width: 50%;
       overflow-wrap: break-word;
       margin-right: 0;
+      margin-bottom: 30px;
 
-      &:last-child { padding: 0; }
+      &:last-child {
+        padding: 0;
+        margin-bottom: 0;
+      }
 
-      @include tablet { padding-right: 20px; }
+      @include tablet {
+        margin-bottom: 0;
+        padding-right: 30px;
+      }
     }
   }
 
@@ -152,7 +159,7 @@
 
   &-vote {
     margin: 10px 5px;
-    min-width: 90px;
+    min-width: 80px;
     width: auto;
   }
 
@@ -162,6 +169,7 @@
   }
 
   &-return-to-top {
+    display: none;
     @include desktop { display: none; }
 
     border-top: 1px solid $border-color;
@@ -196,6 +204,7 @@
     font-family: $text_font_medium;
     position: relative;
     font-weight: $font-weight-semibold;
+    padding: 0 10px;
   }
 
   &-item {
@@ -207,9 +216,10 @@
 
     &.current-article,
     &:hover,
+    &:focus,
     &:active {
       background-color: $primary-shade;
-      color: $text_color;
+      color: $text_color !important;
       text-decoration: none;
     }
   }
@@ -222,6 +232,6 @@
   }
 
   li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
