@@ -1,7 +1,11 @@
 /***** Breadcrumbs *****/
 .breadcrumbs-container {
+  @include desktop {
+    margin-bottom: 60px;
+  }
+
   padding: 12px 0;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: $secondary-shade;
 }
 

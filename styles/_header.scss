@@ -94,16 +94,17 @@ $header-height: 65px;
     @include tablet { display: none; }
     background: none;
     border: 0;
-    color: $link_color;
+    color: $brand_text_color;
     display: inline-block;
-    margin-right: 10px;
-    padding: 0;
+    margin-left: -10px;
+    padding: 10px;
     width: auto;
+    cursor: pointer;
 
     .icon-menu {
       vertical-align: middle;
-      width: 13px;
-      height: 13px;
+      width: 16px;
+      height: 16px;
     }
 
     [dir="rtl"] & {
