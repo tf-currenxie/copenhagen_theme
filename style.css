@@ -790,13 +790,13 @@ ul {
 }
 
 .user-nav[aria-expanded="true"] {
-  background-color: #fff;
+  background-color: $brand_color;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #ddd;
+  border: solid 1px $brand_color;
   right: 0;
   left: 0;
   top: 65px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .user-nav[aria-expanded="true"] > a {
