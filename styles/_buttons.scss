@@ -82,7 +82,9 @@
 
 
   &[disabled] {
-    background-color: #ddd;
+    background-color: $color-gray-main;
+    border-color: $color-gray-main;
+    color: $color-gray-dark;
   }
 }
 
