@@ -119,6 +119,10 @@
     flex: 1 0 auto; //Explicit values needed whith flex-direction: column for IE11
     margin-bottom: 30px;
     padding: 0;
+
+    &-item {
+      margin-left: 10px;
+    }
   }
 
   &-relatives {

@@ -493,6 +493,8 @@ ul {
 
 .button-large[disabled], input[type="submit"][disabled] {
   background-color: #ddd;
+  border-color: #ddd;
+  color: #888;
 }
 
 .button-secondary {
@@ -1954,6 +1956,10 @@ ul {
     flex: 0 0 20%;
     height: auto;
   }
+}
+
+.article-sidebar-item {
+  margin-left: 10px;
 }
 
 .article-relatives {
