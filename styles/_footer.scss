@@ -6,12 +6,16 @@
   color: $brand_text_color;
   font-size: $font-size-small;
 
-  a {
-    color: $secondary-text-color;
-  }
-
   &-inner {
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
     @include max-width-container;
+    position: relative;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
   }
 
   &-language-selector button {
@@ -23,6 +27,7 @@
     display: flex;
     margin-left: -10px;
     margin-right: -10px;
+    margin-bottom: 5px;
     & a {
       display: block;
       padding: 10px;
@@ -33,6 +38,26 @@
       height: 16px;
       & path {
         fill: #ffffff;
+      }
+    }
+  }
+
+  &-language {
+    @include mobile {
+      margin-bottom: 30px;
+    }
+    display: flex;
+    align-items: baseline;
+    margin-left: -5px;
+    margin-right: -5px;
+    & li {
+      display: block;
+      padding: 5px;
+
+      &:first-of-type {
+        @include mobile {
+          flex: 0 0 100%;
+        }
       }
     }
   }
