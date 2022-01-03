@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/currenxie/copenhagen_theme/compare/v1.0.0...v1.0.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* [sc-3189] header logo link to currenxie ([#3](https://github.com/currenxie/copenhagen_theme/issues/3)) ([d926269](https://github.com/currenxie/copenhagen_theme/commit/d926269f5a303d6b08e4089a13cc952ea368f297))
+
 # 1.0.0 (2021-12-09)
 
 
