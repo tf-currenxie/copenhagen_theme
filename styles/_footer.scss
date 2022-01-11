@@ -53,12 +53,6 @@
     & li {
       display: block;
       padding: 5px;
-
-      &:first-of-type {
-        @include mobile {
-          flex: 0 0 100%;
-        }
-      }
     }
   }
 }
