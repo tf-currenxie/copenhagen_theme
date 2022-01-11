@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/currenxie/copenhagen_theme/compare/v1.0.1...v1.0.2) (2022-01-11)
+
+
+### Bug Fixes
+
+* [sc-3334] update footer template ([#4](https://github.com/currenxie/copenhagen_theme/issues/4)) ([3c4cbcb](https://github.com/currenxie/copenhagen_theme/commit/3c4cbcbe6d7d0f33e3865b8e25393f5a87800bac))
+
 ## [1.0.1](https://github.com/currenxie/copenhagen_theme/compare/v1.0.0...v1.0.1) (2022-01-03)
 
 
