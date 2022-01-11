@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/currenxie/copenhagen_theme/compare/v1.0.2...v1.0.3) (2022-01-11)
+
+
+### Bug Fixes
+
+* [sc-3334] fix scroll bug in mobile ([#6](https://github.com/currenxie/copenhagen_theme/issues/6)) ([366d485](https://github.com/currenxie/copenhagen_theme/commit/366d485848a8c1b3e302d358db4c97c850d08979))
+
 ## [1.0.2](https://github.com/currenxie/copenhagen_theme/compare/v1.0.1...v1.0.2) (2022-01-11)
 
 
