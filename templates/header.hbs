@@ -3,7 +3,6 @@
 <header class="header">
   <div class="header-content">
     <div class="logo">
-      {{#link 'help_center'}}
         <a class="logo-link" href="https://www.currenxie.com/" target="_blank">
           <svg width="1467px" height="231px" viewBox="0 0 1467 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -25,11 +24,10 @@
                   </g>
               </g>
           </svg>
+          {{#if settings.show_brand_name}}
+            <span aria-hidden="true">{{help_center.name}}</span>
+          {{/if}}
         </a>
-        {{#if settings.show_brand_name}}
-          <span aria-hidden="true">{{help_center.name}}</span>
-        {{/if}}
-      {{/link}}
     </div>
     <div class="nav-wrapper">
       <nav class="user-nav" id="user-nav">

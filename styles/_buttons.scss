@@ -88,16 +88,32 @@
   }
 }
 
+.button-small {
+  @include mobile { width: auto; }
+
+  font-size: $font-size-smaller;
+  line-height: 1.5;
+  padding: 3px 10px;
+  min-height: 24px;
+  width: auto;
+}
+
 .button-secondary {
-  color: $secondary-text-color;
-  border: 1px solid $border-color;
+  color: $link-color;
+  border: 1px solid $link-color;
   background-color: transparent;
 
   &:hover,
   &:focus,
   &:active {
-    color: $text_color;
-    border: 1px solid $border-color;
-    background-color: $primary-shade;
+    color: $hover-link-color;
+    border-color: $hover-link-color;
+    background-color: transparent;
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    border-color: $color-gray-main;
+    color: $color-gray-dark;
   }
 }
